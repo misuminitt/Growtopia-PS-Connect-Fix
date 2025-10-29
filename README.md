@@ -6,7 +6,7 @@ Panduan ini menjelaskan cara **mengembalikan semua pengaturan jaringan & client 
 
 ---
 
-## 🧰 Prasyarat
+## Spec Laptop yang digunakan
 - Windows 10/11
 - Growtopia EXE client (non-Steam)
 - Akses Administrator (untuk edit HOSTS & pengaturan jaringan)
@@ -14,7 +14,7 @@ Panduan ini menjelaskan cara **mengembalikan semua pengaturan jaringan & client 
 
 ---
 
-## ✅ Langkah Inti (Reset → Isi HOSTS → Masuk)
+## Langkah-langkah
 
 1) **Edit HOSTS dengan Notepad (Admin)**
    - Buka:
@@ -85,7 +85,7 @@ Jika masih ada file override lain → **hapus juga**.
 
 ---
 
-## 🔎 Verifikasi Cepat
+## Verifikasi
 
 Sebelum membuka game, jalankan:
 
@@ -94,11 +94,3 @@ nslookup growtopia1.com
 ```
 
 Jika mengarah ke IP server private (contoh `15.235.166.218`), artinya HOSTS sudah bekerja.
-
----
-
-## 💡 Catatan Penting
-
-* **Jangan gunakan VPN/WARP/NextDNS/AdGuard** yang bisa mengabaikan HOSTS. Jika digunakan, matikan dahulu.
-* Metode ini **TIDAK** memakai `growtopia_override.cfg`. Semua koneksi diarahkan via HOSTS sesuai instruksi owner.
-* Jika tetap **stuck di “Located server, connecting…”**, itu hampir pasti **server backend tidak merespons handshake** (bukan masalah di PC). Minta owner memeriksa proses server/port.
